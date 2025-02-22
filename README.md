@@ -42,6 +42,7 @@ Desenvolver um software que permita o gerenciamento das vacinas aplicadas aos in
 - **MySQL**: Banco de dados para persistência dos dados.
 - **Maven**: Gerenciador de dependências.
 - **Postman**: Ferramenta para testar e validar requisições de APIs.
+- **HTML, CSS, JavaScript e Bootstrap**: Tecnologias utilizadas para a interface frontend.
 
 ---
 
