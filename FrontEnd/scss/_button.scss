@@ -1,0 +1,48 @@
+.main_btn {
+  text-decoration: none;
+  display: inline-block;
+  background: $baseColor;
+  padding: 0px 18px;
+  color: #fff;
+  font-family: $headingFont;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 48px;
+  border-radius: 0px;
+  outline: none !important;
+  box-shadow: none !important;
+  text-align: center;
+  border: 1px solid $baseColor;
+  cursor: pointer;
+  text-transform: capitalize;
+  @include transition;
+  &:hover {
+    background: #fff;
+    color: $baseColor;
+    border: 1px solid #fff;
+  }
+}
+
+.main_btn_light {
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid $baseColor;
+  padding: 0px 18px;
+  color: #33363e;
+  font-family: $headingFont;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 48px;
+  border-radius: 0px;
+  outline: none !important;
+  box-shadow: none !important;
+  text-align: center;
+  border: 1px solid $baseColor;
+  cursor: pointer;
+  text-transform: capitalize;
+  @include transition;
+  &:hover {
+    background: $baseColor;
+    color: #fff;
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "paciente": [
+    {
+      "id": "1d05",
+      "nome": "Lis Teles Borges",
+      "cpf": "011.494.901-20",
+      "sexo": "feminino",
+      "data_nascimento": "2018-12-02"
+    }
+  ],
+  "vacina": [
+    {
+      "vacina": "Febre Amarela 3",
+      "descricao": "Febre amarela",
+      "limite_aplicacao": "3",
+      "publico_alvo": "adultos",
+      "id": "ee48"
+    },
+    {
+      "id": "f63f",
+      "vacina": "COVID",
+      "descricao": "contra gripe",
+      "limite_aplicacao": "3",
+      "publico_alvo": "adultos"
+    }
+  ],
+  "imunizacoes": [
+    {
+      "id": "1",
+      "id_paciente": 1,
+      "id_dose": 1,
+      "data_aplicacao": "2024-01-15",
+      "fabricante": "Butantan",
+      "lote": "L12345",
+      "local_aplicacao": "Posto Central",
+      "profissional_aplicador": "Dr. Silva"
+    },
+    {
+      "id": "2",
+      "id_paciente": 2,
+      "id_dose": 3,
+      "data_aplicacao": "2024-02-10",
+      "fabricante": "Fiocruz",
+      "lote": "L67890",
+      "local_aplicacao": "Posto Sul",
+      "profissional_aplicador": "Enf. Souza"
+    }
+  ],
+  "dose": [
+    {
+      "id": "1",
+      "id_vacina": 1,
+      "dose": "Dose 1",
+      "idade_recomendada_aplicacao": 12
+    },
+    {
+      "id": "2",
+      "id_vacina": 1,
+      "dose": "Dose 2",
+      "idade_recomendada_aplicacao": 24
+    }
+  ]
+}

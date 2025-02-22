@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página de Estatísticas</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Ícones FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="menu">
+
+      <!-- menu.html -->
+
+<header class="header_area">
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand logo_h" href="../index.html">
+        <img src="../img/logo.png" alt="Logo" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="nav navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../cadastro/vacina.html"
+              >Vacinas</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../cadastro/paciente.html"
+              >Cadastro</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../cadastro/imunizacoes.html"
+              >Imunizações</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../cadastro/estatisticas.html"
+              >Estatisticas</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+    </div>
+
+    <section class="banner_area">
+      <div class="banner_inner d-flex align-items-center">
+        <div class="container">
+          <div
+            class="banner_content d-md-flex justify-content-between align-items-center"
+          >
+            <div class="mb-3 mb-md-0">
+              <h2>Estatísticas</h2>
+              <p>de Imunizações</p>
+            </div>
+            <div class="search-bar">
+              <!-- Barra de busca por ID do Paciente -->
+              <div class="d-flex mb-3 p-2">
+                <input
+                  type="text"
+                  class="form-control mr-2"
+                  placeholder="Buscar por ID do Paciente"
+                  id="search-id"
+                />
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Idade em Meses"
+                  id="age-id"
+                />
+                <button class="btn btn-primary ms-2" id="search-id-btn">
+                  Buscar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="feature-section">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-md-4">
+            <div class="card card-feature text-center">
+              <i class="fas fa-syringe"></i>
+              <h3 class="card-feature__title">
+                Vacinas aplicadas por paciente
+              </h3>
+              <p class="card-feature__value" id="vacinas-aplicadas"></p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-feature text-center">
+              <i class="fas fa-calendar-check"></i>
+              <h3 class="card-feature__title">
+                Vacinas aplicáveis no próximo mês
+              </h3>
+              <p class="card-feature__value" id="vacinas-proximo-mes"></p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-feature text-center">
+              <i class="fas fa-exclamation-circle"></i>
+              <h3 class="card-feature__title">Vacinas atrasadas</h3>
+              <p class="card-feature__value" id="vacinas-atrasadas"></p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-feature text-center">
+              <i class="fas fa-user-clock"></i>
+              <h3 class="card-feature__title">
+                Vacinas acima de determinada idade
+              </h3>
+              <p class="card-feature__value" id="vacinas-idade"></p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-feature text-center">
+              <i class="fas fa-ban"></i>
+              <h3 class="card-feature__title">Vacinas não aplicáveis</h3>
+              <p class="card-feature__value" id="vacinas-nao-aplicaveis"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JavaScript externo -->
+    <script src="/js/include.js"></script>
+    <script type="module" src="/js/estatisticas.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
+

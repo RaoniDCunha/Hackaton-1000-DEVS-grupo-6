@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de Vacina</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="menu">
+
+      <!-- menu.html -->
+
+<header class="header_area">
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand logo_h" href="../index.html">
+        <img src="../img/logo.png" alt="Logo" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="nav navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../cadastro/vacina.html"
+              >Vacinas</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../cadastro/paciente.html"
+              >Cadastro</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../cadastro/imunizacoes.html"
+              >Imunizações</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../cadastro/estatisticas.html"
+              >Estatisticas</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+    </div>
+
+    <section class="banner_area">
+      <div class="banner_inner d-flex align-items-center">
+        <div class="container">
+          <div
+            class="banner_content d-md-flex justify-content-between align-items-center"
+          >
+            <div class="mb-3 mb-md-0">
+              <h2>Cadastro</h2>
+              <p>de vacina</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container mt-4">
+    <!--
+    
+      <a href="/cadastro/adicionar/vacina.html" class="main_btn"
+        >Nova vacina</a
+      >
+    </div>
+    -->
+
+      <table class="table table-striped table-bordered">
+        <thead class="bg-light">
+          <tr>
+            <th>Vacina</th>
+            <th>Descrição</th>
+            <th>Limite de Aplicação</th>
+            <th>Público-Alvo</th>
+          </tr>
+        </thead>
+        <tbody id="dados">
+          <!-- Dados dos usuários serão carregados aqui -->
+        </tbody>
+      </table>
+    </div>
+
+    <!-- JavaScript externo -->
+    <script src="../js/include.js"></script>
+    <script type="module" src="../js/vacina.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
