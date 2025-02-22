@@ -1,0 +1,46 @@
+create database api;
+
+use api;
+
+CREATE TABLE paciente (
+  id INT(11) NOT NULL AUTO_INCREMENT,
+  nome VARCHAR(60) NOT NULL,
+  cpf VARCHAR(11) NOT NULL UNIQUE,
+  sexo ENUM('M','F') NOT NULL,
+  data_nascimento DATE NOT NULL,
+  PRIMARY KEY (id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE vacina (
+  id INT(11) NOT NULL AUTO_INCREMENT,
+  vacina VARCHAR(50) NOT NULL,
+  descricao VARCHAR(200),
+  limite_aplicacao INT(11),
+  publico_alvo ENUM('CRIANCA','ADOLESCENTE','ADULTO','GESTANTE') NOT NULL,
+  PRIMARY KEY (id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE dose (
+  id INT(11) NOT NULL AUTO_INCREMENT,
+  id_vacina INT(11) NOT NULL,
+  dose VARCHAR(45) NOT NULL,
+  idade_recomendada_aplicacao INT(11),
+  PRIMARY KEY (id),
+  FOREIGN KEY (id_vacina) REFERENCES vacina(id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE imunizacoes (
+  id INT(11) NOT NULL AUTO_INCREMENT,
+  id_paciente INT(11) NOT NULL,
+  id_dose INT(11) NOT NULL,
+  data_aplicacao DATE NOT NULL,
+  fabricante VARCHAR(45),
+  lote VARCHAR(45),
+  local_aplicacao VARCHAR(45),
+  profissional_aplicador VARCHAR(45),
+  PRIMARY KEY (id),
+  FOREIGN KEY (id_paciente) REFERENCES paciente(id) ON DELETE CASCADE,
+  FOREIGN KEY (id_dose) REFERENCES dose(id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
