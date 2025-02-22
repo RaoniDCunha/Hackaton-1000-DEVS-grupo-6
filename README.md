@@ -16,6 +16,25 @@ Desenvolver um software que permita o gerenciamento das vacinas aplicadas aos in
 
 ---
 
+## 🖼️ Sessão de Imagens
+
+### Página Inicial
+<img src="img/pagina_inicial.png" alt="Página Inicial" width="800" />
+
+### Página de Pacientes
+<img src="img/pagina_pacientes.png" alt="Página de Pacientes" width="800" />
+
+### Página de Vacinas
+<img src="img/pagina_vacinas.png" alt="Página de Vacinas" width="800" />
+
+### Página de Imunização
+<img src="img/pagina_imunizacao.png" alt="Página de Imunização" width="800" />
+
+### Página de Estatísticas
+<img src="img/pagina_estatisticas.png" alt="Página de Estatísticas" width="800" />
+
+---
+
 ## 🛠️ Tecnologias Utilizadas
 
 - **Java**: Linguagem de programação principal.
