@@ -35,7 +35,7 @@ Desenvolver um software que permita o gerenciamento das vacinas aplicadas aos in
 
 ---
 
-## 🖥️ Como Baixar e Executar o Projeto
+## 🖥️ Como Baixar e Executar o Projeto Backend
 
 ### 📌 Requisitos
 
@@ -49,10 +49,10 @@ Antes de rodar o projeto, certifique-se de ter os seguintes requisitos instalado
 
 ```sh
 # Clone o repositório
-git clone https://github.com/lucaxjordo/gerenciador-vacinas-java-spark.git
+git clone https://github.com/lucaxjordo/gerenciador-vacinas-java-spark.git](https://github.com/RaoniDCunha/Hackaton-1000-DEVS-grupo-6.git
 
 # Acesse o diretório do projeto
-cd src/main
+cd Backend/src/main/java/br/com/api
 ```
 
 ### 📦 2. Configurar o Banco de Dados
@@ -82,10 +82,12 @@ mvn clean install
 ```sh
 mvn exec:java
 ```
+Obs: Ou rodar  no botão Run em seu compilador estando no arquivo Main.java
 
 A API estará disponível em: [http://localhost:3000](http://localhost:3000)
 
 ---
+
 
 ## 🔗 Endpoints da API
 
@@ -177,6 +179,32 @@ A API estará disponível em: [http://localhost:3000](http://localhost:3000)
 ]
 ```
 
+## 🖥️ Como Baixar e Executar o Projeto Frontend
+
+### 📌 Requisitos
+
+Antes de rodar o projeto, certifique-se de ter os seguintes requisitos instalados:
+- **IDE VSCode**
+- **Extensão Live Server**
+- **Git**
+
+### 📥 1. Clonar o Repositório
+
+```sh
+# Clone o repositório
+git clone https://github.com/lucaxjordo/gerenciador-vacinas-java-spark.git](https://github.com/RaoniDCunha/Hackaton-1000-DEVS-grupo-6.git
+
+# Acesse o diretório do projeto
+cd FrontEnd/
+```
+
+### 🚀 2. Compilar e Executar o Projeto
+
+1. Abra o arquivo index.html usando o Live Server
+
+2. No seu navegador acesse a aplicação localmente usando o o endereço: http://127.0.0.1:5500/index.html
+
+Obs: Se certifique de já ter o server backend rodando para haver comunicação nas duas aplicações
 
 ## 👥 Equipe
 
